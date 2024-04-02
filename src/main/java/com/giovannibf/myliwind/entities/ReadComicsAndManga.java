@@ -19,7 +19,9 @@ public class ReadComicsAndManga {
         this.duration = duration;
     }
 
+    /**
     AddToDailyHabitList();
 
     AddToCalendar();
+     **/
 }

@@ -18,7 +18,9 @@ public class ReadNovels {
         this.duration = duration;
     }
 
+    /**
     AddToDailyHabitList();
 
     AddToCalendar();
+     **/
 }

@@ -16,9 +16,11 @@ public class StudyOnlineCourses {
         this.duration = duration;
     }
 
+    /**
     AddToDailyHabitList();
 
     AddToCalendar();
+     **/
 }
 
 
