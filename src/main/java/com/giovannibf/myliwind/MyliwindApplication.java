@@ -1,6 +1,8 @@
 package com.giovannibf.myliwind;
 
+import com.giovannibf.myliwind.entities.Chapter;
 import com.giovannibf.myliwind.entities.Exercise;
+import com.giovannibf.myliwind.entities.ReadComicsAndManga;
 import com.giovannibf.myliwind.entities.Workout;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,14 +17,10 @@ public class MyliwindApplication {
 
 		//SpringApplication.run(MyliwindApplication.class, args);
 
-		List<Exercise> todayExercises = Arrays.asList(
-				new Exercise("Flexão", 3, 12),
-				new Exercise("Abdominal", 3, 12),
-				new Exercise("Agachamento", 3, 12)
-		);
-
-		Workout myWorkoutHabit = new Workout("01", "Treino de peito", "Rastreando meu treino de peito", 120, todayExercises);
-		myWorkoutHabit.trackProgress();
+		ReadComicsAndManga myReadManga = new ReadComicsAndManga("01", "Ler one piece", "Acompanhando minha leitura de One Piece", 120,"One Piece");
+		myReadManga.addChapterRead(new Chapter("1000", "Eiichiro Oda"));
+		myReadManga.addChapterRead(new Chapter("1001", "Eiichiro Oda"));
+		myReadManga.trackProgress();
 	}
 
 }
