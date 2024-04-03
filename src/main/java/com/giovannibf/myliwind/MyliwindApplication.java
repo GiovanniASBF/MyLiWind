@@ -1,9 +1,6 @@
 package com.giovannibf.myliwind;
 
-import com.giovannibf.myliwind.entities.Chapter;
-import com.giovannibf.myliwind.entities.Exercise;
-import com.giovannibf.myliwind.entities.ReadComicsAndManga;
-import com.giovannibf.myliwind.entities.Workout;
+import com.giovannibf.myliwind.entities.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -17,10 +14,17 @@ public class MyliwindApplication {
 
 		//SpringApplication.run(MyliwindApplication.class, args);
 
-		ReadComicsAndManga myReadManga = new ReadComicsAndManga("01", "Ler one piece", "Acompanhando minha leitura de One Piece", 120,"One Piece");
-		myReadManga.addChapterRead(new Chapter("1000", "Eiichiro Oda"));
-		myReadManga.addChapterRead(new Chapter("1001", "Eiichiro Oda"));
-		myReadManga.trackProgress();
+		ReadBooks myReadHabit = new ReadBooks("03", "Ler Percy Jackson", "Acompanhando minha leitura de Percy Jackson", 120);
+
+		Book book1 = new Book("1984", "George Orwell", 328);
+		myReadHabit.startNewBook(book1);
+		myReadHabit.readPages(50); // Simula a leitura de 50 páginas
+
+		Book book2 = new Book("Clean Code", "Robert C. Martin", 464);
+		myReadHabit.startNewBook(book2);
+		myReadHabit.readPages(90); // Simula a leitura de 90 páginas
+
+		myReadHabit.trackProgress();
 	}
 
 }
