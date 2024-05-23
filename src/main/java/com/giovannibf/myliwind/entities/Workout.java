@@ -8,8 +8,8 @@ public class Workout extends Habit{
 
     List<Exercise> exercisesList; //list of exercises performed
 
-    public Workout(String id, String name, String description, int minutesDuration, List<Exercise> exercisesList) {
-        super(id, name, description, minutesDuration);
+    public Workout(String name, String description, List<Exercise> exercisesList) {
+        super(name, description);
         this.exercisesList = new ArrayList<>(exercisesList);
     }
 

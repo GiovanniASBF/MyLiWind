@@ -10,8 +10,8 @@ public class ReadBooks extends Habit {
     private int pagesReadCurrentBook;
     List<Book> booksRead;
 
-    public ReadBooks(String id, String name, String description, int minutesDuration) {
-        super(id, name, description, minutesDuration);
+    public ReadBooks(String name, String description) {
+        super(name, description);
         this.booksRead = new ArrayList<>();
     }
 

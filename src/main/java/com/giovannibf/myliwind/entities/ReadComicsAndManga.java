@@ -8,8 +8,8 @@ public class ReadComicsAndManga extends Habit{
     String title;
     private List<Chapter> chaptersRead;
 
-    public ReadComicsAndManga(String id, String name, String description, int minutesDuration, String title) {
-        super(id, name, description, minutesDuration);
+    public ReadComicsAndManga(String name, String description, String title) {
+        super(name, description);
         this.title = title;
         this.chaptersRead = new ArrayList<>();
     }
